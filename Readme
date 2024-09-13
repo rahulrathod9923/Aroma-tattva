@@ -1,0 +1,7 @@
+# npm install -g json-server
+
+# user/admin:
+# npx json-server --watch admin.json --port 3001
+
+# db:
+# npx json-server --watch db.json --port 3002

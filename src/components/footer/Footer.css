@@ -1,0 +1,46 @@
+.footer-container {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #363535;
+    line-height: 50px;
+}
+
+.footer-about-urls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-about-urls {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+
+.footer-about-urls:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-instagram-icon,
+.footer-facebook-icon {
+    padding: 20px 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    scale: 1;
+}
+
+.footer-instagram-icon:hover,
+.footer-facebook-icon:hover {
+    scale: 1.1;
+}

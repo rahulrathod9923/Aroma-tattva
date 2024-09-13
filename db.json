@@ -1,0 +1,16 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Aroma Abhyang Tailam",
+            "price": 19.99,
+            "prodImages": "/assets/product-images/Aroma Abhyang Tailam.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Charcoal Hand Crafted Soap",
+            "price": 29.99,
+            "prodImages": "/assets/product-images/Charcoal Hand Crafted Soap.jpg"
+        }
+    ]
+}

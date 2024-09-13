@@ -1,0 +1,169 @@
+/* General container styling */
+.flatlist-container {
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px;
+    /* Ensure padding below for responsive content */
+}
+
+/* Flexbox styling for the list */
+.flatlist-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    animation: autoScroll 30s ease-in-out infinite;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* List item styling */
+.flatlist-container li {
+    flex: 0 0 100%;
+    position: relative;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+/* Image styling inside the list */
+.flatlist-container li img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    mix-blend-mode: color-burn;
+}
+
+/* Hover effect on list items */
+.flatlist-container li:hover {
+    transform: scale(1.1);
+    animation-play-state: paused;
+}
+
+/* Styling for content (e.g., Product ID text) */
+.flatlist-container li p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Fade-in animation for list items */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Auto-scrolling animation */
+@keyframes autoScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* RESPONSIVENESS */
+
+/* For large screens and desktops */
+@media (min-width: 1024px) {
+    .flatlist-container {
+        width: 60%;
+    }
+
+    .flatlist-container li {
+        height: 60vh;
+    }
+
+    .flatlist-container li p {
+        font-size: 18px;
+    }
+}
+
+/* For tablets (portrait and landscape) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .flatlist-container {
+        width: 80%;
+    }
+
+    .flatlist-container li {
+        height: 40vh;
+    }
+
+    .flatlist-container li p {
+        font-size: 16px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 767px) {
+    .flatlist-container {
+        width: 90%;
+    }
+
+    .flatlist-container li {
+        height: 30vh;
+    }
+
+    .flatlist-container li p {
+        font-size: 14px;
+    }
+
+    /* Adjust auto-scroll speed on mobile */
+    .flatlist-container ul {
+        animation: autoScroll 40s ease-in-out infinite;
+    }
+}

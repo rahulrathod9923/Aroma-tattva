@@ -124,7 +124,6 @@ import mintMuskSoap4 from '/assets/product-images/Mint & Musk Hand Crafted Soap4
 import ubtanTailam1 from '/assets/product-images/Ubtan & Abhyang Tailam.jpg';
 import ubtanTailam2 from '/assets/product-images/Ubtan & Abhyang Tailam2.jpg';
 import hairNourishmentOil1 from '/assets/product-images/Hair Nourshment Oil.jpg';
-// import hairNourishmentOil2 from '/assets/product-images/Hair Nourshment Oil2.jpg';
 import herbalUbtan1 from '/assets/product-images/Harbal Shabi Ubtan.jpg';
 import herbalSoapOil1 from '/assets/product-images/Herbal soap & oil pack.jpg';
 import herbalSoapOil2 from '/assets/product-images/Herbal soap & oil pack2.jpg';
